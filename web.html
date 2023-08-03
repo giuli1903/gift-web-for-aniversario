@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aniversario Especial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <h1>¡FELIZ 6 MESES!</h1>
+    <h1>te amo mi amor pero preparate...</h1>
+    <p>Ingresa tu nombre:</p>
+    <form id="name-form">
+      <input type="text" id="name-input" required>
+      <button type="button" onclick="startQuiz()">Comenzar</button>
+    </form>
+  </div>
+
+  <div id="quiz-container" style="display: none;">
+    <!-- Aquí se verán las preguntas -->
+  </div>
+
+  <!-- div para la tercera parte -->
+  <div id="gift-content" style="display: none;">
+      <h2>¡Felicidades amor, has completado el cuestionario de forma exitosa!</h2>
+      <p>Respuestas correctas: <span id="correct-answers">0</span> de 10</p>
+      <p>Tu porcentaje de respuestas correctas fue del <span id="percentage">0.0</span>%.</p>
+      <p>¡Has ganado un regalo especial por tu enorme esfuerzo, que lo disfrutes!</p>
+      <button type="button" onclick="openInvitation()">Abrir regalo</button>
+      <button type="button" onclick="restartQuiz()">Volver al cuestionario</button>
+    </div>
+  </div>
+
+  <div id="invitation-container" style="display: none;">
+    <h2>¡Invitación especial!</h2>
+    <p>Te invito a recrear nuestra primera cita juntos el 7 de agosto por nuestros 6 meses de novios.</p>
+    <div id="invitation-content" style="display: none;">
+      <h2>¿Aceptas la invitación para recrear nuestra primera cita juntos el 7 de agosto?</h2>
+      <p>Para aceptar la propuesta contactate al número: 0981954254</p>
+      <p>Si queres rechazar... andá nms con la otra, ni me hinches</p>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
